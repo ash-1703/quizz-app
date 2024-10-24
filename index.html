@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The 'meta charset' defines the character encoding for the document, set to UTF-8 for compatibility with most languages and symbols. -->
+    <meta charset="UTF-8">
+    
+    <!-- The 'meta viewport' tag ensures that the layout adjusts to different screen sizes, making the page responsive on mobile devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- The title of the page that will appear in the browser tab. -->
+    <title>Quizz App</title>
+    
+    <!-- Link to an external CSS file where the styles for the page are defined. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- The main container for the entire quiz application. -->
+    <div class="app">
+        <!-- Main title of the quiz displayed at the top of the page. -->
+        <h1>Simple Quiz</h1>
+        
+        <!-- The container that holds the quiz content, including the question and answer buttons. -->
+        <div class="quiz">
+            
+            <!-- The 'question' section where each quiz question will be displayed dynamically via JavaScript. -->
+            <h2 id="question">Question Goes here</h2>
+            
+            <!-- The 'answer-buttons' div holds all the answer buttons. They will be updated dynamically based on the question. -->
+            <div id="answer-buttons">
+                <!-- These buttons represent multiple-choice answers. JavaScript will handle their functionality. -->
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            
+            <!-- The 'next-btn' will allow the user to move to the next question after selecting an answer. It will be controlled by JavaScript. -->
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+    <!-- Link to an external JavaScript file where the functionality of the quiz (logic) is implemented. -->
+    <script src="script.js"></script>
+</body>
+
+</html>
